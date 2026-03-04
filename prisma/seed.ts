@@ -850,6 +850,226 @@ async function main() {
     });
   }
 
+  // ===== gekisaka.jp 2026年3月記事より追加チーム =====
+  await Promise.all([
+    prisma.team.upsert({
+      where: { id: "team-ichibafunabashi" },
+      update: {},
+      create: { id: "team-ichibafunabashi", name: "市立船橋", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-toko-gakuen" },
+      update: {},
+      create: { id: "team-toko-gakuen", name: "桐光学園", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-shoshi" },
+      update: {},
+      create: { id: "team-shoshi", name: "尚志", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-kagoshima-josai" },
+      update: {},
+      create: { id: "team-kagoshima-josai", name: "鹿児島城西", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-nagoya-y" },
+      update: {},
+      create: { id: "team-nagoya-y", name: "名古屋グランパスU-18", country: "日本", league: "Jリーグ U-18", category: Category.CLUB_YOUTH_U18 },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-teikyo" },
+      update: {},
+      create: { id: "team-teikyo", name: "帝京", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-maebashi-ikuei" },
+      update: {},
+      create: { id: "team-maebashi-ikuei", name: "前橋育英", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-shimizu-y" },
+      update: {},
+      create: { id: "team-shimizu-y", name: "清水エスパルスユース", country: "日本", league: "Jリーグ U-18", category: Category.CLUB_YOUTH_U18 },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-fukuoka-u" },
+      update: {},
+      create: { id: "team-fukuoka-u", name: "福岡大学", country: "日本", league: "九州大学サッカーリーグ1部", category: Category.COLLEGE },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-juntendo-u" },
+      update: {},
+      create: { id: "team-juntendo-u", name: "順天堂大学", country: "日本", league: "関東大学サッカーリーグ1部", category: Category.COLLEGE },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-avispa-y" },
+      update: {},
+      create: { id: "team-avispa-y", name: "アビスパ福岡U-18", country: "日本", league: "Jリーグ U-18", category: Category.CLUB_YOUTH_U18 },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-kashiwa-y" },
+      update: {},
+      create: { id: "team-kashiwa-y", name: "柏レイソルU-18", country: "日本", league: "Jリーグ U-18", category: Category.CLUB_YOUTH_U18 },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-hiroshima-y" },
+      update: {},
+      create: { id: "team-hiroshima-y", name: "サンフレッチェ広島ユース", country: "日本", league: "Jリーグ U-18", category: Category.CLUB_YOUTH_U18 },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-tosu-y" },
+      update: {},
+      create: { id: "team-tosu-y", name: "サガン鳥栖U-18", country: "日本", league: "Jリーグ U-18", category: Category.CLUB_YOUTH_U18 },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-yaita-chuo" },
+      update: {},
+      create: { id: "team-yaita-chuo", name: "矢板中央", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-nichidai-fujisawa" },
+      update: {},
+      create: { id: "team-nichidai-fujisawa", name: "日大藤沢", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-toin-gakuen" },
+      update: {},
+      create: { id: "team-toin-gakuen", name: "桐蔭学園", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-saga-higashi" },
+      update: {},
+      create: { id: "team-saga-higashi", name: "佐賀東", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-toho" },
+      update: {},
+      create: { id: "team-toho", name: "東邦", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-kofu-y" },
+      update: {},
+      create: { id: "team-kofu-y", name: "ヴァンフォーレ甲府U-18", country: "日本", league: "Jリーグ U-18", category: Category.CLUB_YOUTH_U18 },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-ryukei-kashiwa" },
+      update: {},
+      create: { id: "team-ryukei-kashiwa", name: "流通経済大柏", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-oita-tsurusaki" },
+      update: {},
+      create: { id: "team-oita-tsurusaki", name: "大分鶴崎", country: "日本", league: "大分県高校サッカー", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-aomori-yamada" },
+      update: {},
+      create: { id: "team-aomori-yamada", name: "青森山田", country: "日本", league: "全国高校サッカー選手権", category: Category.HIGH_SCHOOL },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-fc-ryukyu-y" },
+      update: {},
+      create: { id: "team-fc-ryukyu-y", name: "FC琉球U-18", country: "日本", league: "Jリーグ U-18", category: Category.CLUB_YOUTH_U18 },
+    }),
+    prisma.team.upsert({
+      where: { id: "team-kashima-jy-tsukuba" },
+      update: {},
+      create: { id: "team-kashima-jy-tsukuba", name: "鹿島アントラーズつくばジュニアユース", country: "日本", category: Category.CLUB_YOUTH_U15 },
+    }),
+  ]);
+
+  // ===== gekisaka.jp 2026年3月記事より追加選手 =====
+  type GekisakaPlayer = {
+    id: string;
+    nameJa: string;
+    nameKana: string | null;
+    position: Position;
+    currentTeamId: string;
+    birthday?: Date;
+    bio: string;
+  };
+
+  const gekisakaPlayers: GekisakaPlayer[] = [
+    // ── 高校・クラブユース選手 ──
+    { id: "geki-shinozaki", nameJa: "篠崎 健人", nameKana: "しのざき たけと", position: Position.DF, currentTeamId: "team-ichibafunabashi", bio: "身長186cmの市立船橋2年DF。鹿島アントラーズつくばジュニアユース出身。CB・右SB両方でプレー可能で、縦への力強い動きと走力が武器。U-17日本高校選抜選出。" },
+    { id: "geki-hoshi", nameJa: "星 宗介", nameKana: "ほし そうすけ", position: Position.MF, currentTeamId: "team-shoshi", birthday: new Date("2009-02-01"), bio: "尚志高2年MF（ボランチ）。矢板SC出身。鋭い読みとインターセプト、ビルドアップの質、前への推進力を兼ね備える。U-17日本代表・U-17日本高校選抜選出。" },
+    { id: "geki-matsunaga", nameJa: "松永 悠輝", nameKana: "まつなが ゆうき", position: Position.MF, currentTeamId: "team-shizuokagakuen", bio: "静岡学園2年MF。湘南ベルマーレU-15出身。足裏を活用した巧みなドリブルが最大の武器。サイドハーフ・トップ下・右FWとマルチにプレー。県新人戦決勝でもゴールを決めた10番。" },
+    { id: "geki-sakai", nameJa: "境 勇翔", nameKana: "さかい ゆうしょう", position: Position.FW, currentTeamId: "team-kagoshima-josai", bio: "身長177cm・70kgの鹿児島城西2年FW。スピードと屈強なフィジカルを武器にゴール前での反転シュートを得意とする。背番号9。大迫勇也を輩出した名門のエース候補。" },
+    { id: "geki-chiga", nameJa: "千賀 翔大郎", nameKana: "ちが しょうたろう", position: Position.MF, currentTeamId: "team-nagoya-y", bio: "名古屋グランパスU-18の2年MF。名古屋グランパスU-15出身。2026年シーズンから背番号10。右サイドの突破力に秀でるサイドアタッカー。" },
+    { id: "geki-kamiya", nameJa: "神谷 輝一", nameKana: "かみや こういち", position: Position.MF, currentTeamId: "team-nagoya-y", bio: "名古屋グランパスU-18の2年MF（ボランチ）。名古屋グランパスU-15出身。2026年シーズン新キャプテン。頭脳派ボランチで視野が広く、90分間効果的に働き続ける。" },
+    { id: "geki-odike", nameJa: "オディケチソン 太地", nameKana: "おでぃけちそん たいち", position: Position.DF, currentTeamId: "team-nagoya-y", bio: "身長190cmの名古屋グランパスU-18 2年CB。俊足を兼ね備えた大型センターバック。イタリアへの短期留学経験あり。" },
+    { id: "geki-ikeda-a", nameJa: "池田 歩弘", nameKana: "いけだ あゆひろ", position: Position.MF, currentTeamId: "team-nagoya-y", bio: "名古屋グランパスU-18の1年MF。アスレカップ前橋育英戦でゴールを決めた期待の新鋭。" },
+    { id: "geki-tsuneyoshi", nameJa: "恒吉 良真", nameKana: "つねよし りょうま", position: Position.MF, currentTeamId: "team-nagoya-y", bio: "名古屋グランパスU-18の2年MF。アスレカップ前橋育英戦でゴールを決めた。" },
+    { id: "geki-okuda", nameJa: "奥田 悠真", nameKana: "おくだ ゆうま", position: Position.MF, currentTeamId: "team-jubilo-y", bio: "ジュビロ磐田U-18の2年MF。川崎フロンターレU-18から移籍。小柄ながら高い走力と運動量を持つアタッカー。シュート精度が高く、守備でもエネルギッシュにプレスをかける。" },
+    { id: "geki-sugiyama", nameJa: "杉山 琥二郎", nameKana: "すぎやま こじろう", position: Position.MF, currentTeamId: "team-shimizu-y", bio: "清水エスパルスユースのMF。静岡県ユース選抜の主将を務め、中盤で組織をコントロールするゲームメーカー。" },
+    { id: "geki-miyamoto", nameJa: "宮本 周征", nameKana: "みやもと しゅうせい", position: Position.FW, currentTeamId: "team-teikyo", bio: "帝京高3年FW。ゴール量産中のエース。順天堂大への進学が決定。U-17日本高校選抜の試合で2ゴールを記録。" },
+    { id: "geki-hagiwara", nameJa: "萩原 慶", nameKana: "はぎはら けい", position: Position.MF, currentTeamId: "team-toko-gakuen", bio: "桐光学園2年MF（右サイドハーフ）。縦への動きを強みとするプレーヤー。U-17日本高校選抜選出。" },
+    // ── 明治大 2026年入部予定選手 ──
+    { id: "geki-kawamoto", nameJa: "川本 大善", nameKana: "かわもと たいぜん", position: Position.MF, currentTeamId: "team-meiji", bio: "柏レイソルU-18出身。エネルギッシュな動きと声でチームを勢いづけるファイター。U-17ワールドカップ先発経験あり。2026年明治大入部。" },
+    { id: "geki-soda", nameJa: "宗田 椛生", nameKana: "そうだ かなう", position: Position.FW, currentTeamId: "team-meiji", bio: "サンフレッチェ広島ユース出身。プレミアWEST得点ランキング2位（18得点）のストライカー。2026年明治大入部。" },
+    { id: "geki-iwamura", nameJa: "岩村 淳之介", nameKana: "いわむら じゅんのすけ", position: Position.DF, currentTeamId: "team-meiji", bio: "サガン鳥栖U-18出身。サイドでの推進力と競り合いの強さが光るDF。2026年明治大入部。" },
+    { id: "geki-tanaka-k", nameJa: "田中 一信", nameKana: "たなか かずのぶ", position: Position.DF, currentTeamId: "team-meiji", bio: "浦和レッズユース出身の左SB。正確な左足を持つ。2026年明治大入部。" },
+    { id: "geki-kanazawa", nameJa: "金沢 楓", nameKana: "かなざわ かえで", position: Position.GK, currentTeamId: "team-meiji", bio: "身長190cmの矢板中央高出身GK。日本高校選抜の正守護神候補。2026年明治大入部。" },
+    { id: "geki-maruyama", nameJa: "丸山 ジェフリー", nameKana: "まるやま じぇふりー", position: Position.GK, currentTeamId: "team-meiji", bio: "流通経済大柏高出身。U-17日本代表歴を持つGK。2026年明治大入部。" },
+    { id: "geki-komuro", nameJa: "小室 秀太", nameKana: "こむろ しゅうた", position: Position.DF, currentTeamId: "team-meiji", bio: "身長186cmの名古屋グランパスU-18出身CB。ヘッドを武器とする。2026年明治大入部。" },
+    { id: "geki-kusunoki", nameJa: "楠 彪", nameKana: "くすのき ひょう", position: Position.MF, currentTeamId: "team-meiji", bio: "ヴァンフォーレ甲府U-18出身。チームリーダーとしてゲームコントロール能力に長ける。2026年明治大入部。" },
+    { id: "geki-mizuno", nameJa: "水野 燦士", nameKana: "みずの さんし", position: Position.MF, currentTeamId: "team-meiji", bio: "東邦高出身の大型アタッカー。2026年明治大入部。" },
+    { id: "geki-nakanishi", nameJa: "中西 康和", nameKana: "なかにし やすかず", position: Position.MF, currentTeamId: "team-meiji", bio: "桐蔭学園高出身。左足と推進力が武器のMF。2026年明治大入部。" },
+    { id: "geki-yahiro", nameJa: "八尋 海斗", nameKana: "やひろ かいと", position: Position.MF, currentTeamId: "team-meiji", bio: "桐蔭学園高出身。技術力と活動量を兼備するMF。2026年明治大入部。" },
+    { id: "geki-arikawa", nameJa: "有川 啓介", nameKana: "ありかわ けいすけ", position: Position.FW, currentTeamId: "team-meiji", bio: "日大藤沢高出身のエースストライカー。選手権で2ゴール。2026年明治大入部。" },
+    // ── 福岡大 2026年入部予定選手 ──
+    { id: "geki-kabashima", nameJa: "樺島 勇波", nameKana: "かばしま ゆうは", position: Position.DF, currentTeamId: "team-fukuoka-u", bio: "身長186cmのアビスパ福岡U-18出身CB。主将。気迫あふれる対人守備、カバーリング、ヘッド能力が武器。2026年福岡大入部。" },
+    { id: "geki-kono", nameJa: "河野 歩夢", nameKana: "こうの あゆむ", position: Position.MF, currentTeamId: "team-fukuoka-u", bio: "身長186cmの大分鶴崎高出身MF（10番）。大柄ながらテクニックを兼備する大器。2026年福岡大入部。" },
+    { id: "geki-okura", nameJa: "大倉 公亮", nameKana: "おおくら こうすけ", position: Position.GK, currentTeamId: "team-fukuoka-u", bio: "身長189cmの大分鶴崎高出身GK。大型守護神として注目。2026年福岡大入部。" },
+    { id: "geki-mihara", nameJa: "三原 拓実", nameKana: "みはら たくみ", position: Position.FW, currentTeamId: "team-fukuoka-u", bio: "佐賀東高出身FW（10番）。ボール運び能力とシュート力が武器。2026年福岡大入部。" },
+    { id: "geki-shimomote", nameJa: "重盛 響輝", nameKana: "しげもり ひびき", position: Position.MF, currentTeamId: "team-fukuoka-u", bio: "鹿児島城西高主将。推進力のある動きで攻守に活躍するMF。2026年福岡大入部。" },
+    { id: "geki-kinoshita", nameJa: "木下 宗祐", nameKana: "きのした そうすけ", position: Position.DF, currentTeamId: "team-fukuoka-u", bio: "身長181cmの飯塚高出身CB。ヘッド能力が攻守に光る。2026年福岡大入部。" },
+    { id: "geki-shimabukuro", nameJa: "島袋 俊輔", nameKana: "しまぶくろ しゅんすけ", position: Position.FW, currentTeamId: "team-fukuoka-u", bio: "FC琉球U-18出身。プリンスリーグ九州2部得点王（19得点）のストライカー。2026年福岡大入部。" },
+    // ── その他高校選手 ──
+    { id: "geki-takiguchi", nameJa: "瀧口 眞大", nameKana: "たきぐち ただひろ", position: Position.DF, currentTeamId: "team-maebashi-ikuei", bio: "前橋育英高3年DF。セットプレーのキッカーを務める。U-17日本高校選抜の試合にも出場。" },
+    { id: "geki-oishi", nameJa: "大石 脩斗", nameKana: "おおいし しゅうと", position: Position.FW, currentTeamId: "team-tsukuba", bio: "鹿児島城西高出身のFW。U-18日本代表経験者。胸トラップの技術とカウンター時の効果的なボール運びに秀でる。2026年筑波大入部。" },
+  ];
+
+  for (const p of gekisakaPlayers) {
+    await prisma.player.upsert({
+      where: { id: p.id },
+      update: {},
+      create: {
+        id: p.id,
+        nameJa: p.nameJa,
+        nameKana: p.nameKana ?? null,
+        nationality: "日本",
+        birthday: p.birthday ?? null,
+        position: p.position,
+        currentTeamId: p.currentTeamId,
+        bio: p.bio,
+      },
+    });
+  }
+
+  // 経歴
+  await prisma.career.createMany({
+    skipDuplicates: true,
+    data: gekisakaPlayers.map((p) => ({
+      playerId: p.id,
+      teamId: p.currentTeamId,
+      startYear: 2024,
+    })),
+  });
+
+  // リビジョン
+  for (const p of gekisakaPlayers) {
+    await prisma.revision.create({
+      data: {
+        playerId: p.id,
+        editorId: adminUser.id,
+        snapshot: { nameJa: p.nameJa, position: p.position, team: p.currentTeamId },
+        changeNote: "gekisaka.jp（2026年3月記事）より登録",
+      },
+    });
+  }
+
   console.log("シードデータの投入が完了しました");
   console.log(`  - チーム: ${await prisma.team.count()}件`);
   console.log(`  - 選手: ${await prisma.player.count()}件`);
