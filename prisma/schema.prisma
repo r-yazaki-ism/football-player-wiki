@@ -1,0 +1,88 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String     @id @default(cuid())
+  email        String     @unique
+  name         String
+  passwordHash String
+  role         Role       @default(USER)
+  revisions    Revision[]
+  createdAt    DateTime   @default(now())
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+model Player {
+  id            String     @id @default(cuid())
+  nameJa        String
+  nameEn        String?
+  nameKana      String?
+  nationality   String     @default("日本")
+  birthday      DateTime?
+  position      Position
+  currentTeamId String?
+  currentTeam   Team?      @relation("CurrentTeam", fields: [currentTeamId], references: [id])
+  bio           String?    @db.Text
+  careers       Career[]
+  revisions     Revision[]
+  status        String     @default("active")
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+}
+
+enum Position {
+  GK
+  DF
+  MF
+  FW
+}
+
+model Team {
+  id             String   @id @default(cuid())
+  name           String
+  country        String   @default("日本")
+  league         String?
+  category       Category
+  currentPlayers Player[] @relation("CurrentTeam")
+  careers        Career[]
+}
+
+enum Category {
+  PRO
+  COLLEGE
+  HIGH_SCHOOL
+  MIDDLE_SCHOOL
+  AMATEUR
+}
+
+model Career {
+  id        String  @id @default(cuid())
+  player    Player  @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  playerId  String
+  team      Team    @relation(fields: [teamId], references: [id])
+  teamId    String
+  startYear Int
+  endYear   Int?
+  notes     String?
+}
+
+model Revision {
+  id         String   @id @default(cuid())
+  player     Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  playerId   String
+  editor     User     @relation(fields: [editorId], references: [id])
+  editorId   String
+  snapshot   Json
+  changeNote String?
+  createdAt  DateTime @default(now())
+}
