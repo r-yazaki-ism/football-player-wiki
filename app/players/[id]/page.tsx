@@ -34,7 +34,7 @@ export default async function PlayerDetailPage({
               <p className="text-gray-400 text-sm">{player.nameEn}</p>
             )}
             <div className="flex flex-wrap gap-2 mt-3">
-              <span className="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full">
+              <span className="bg-sky-100 text-slate-800 text-sm font-semibold px-3 py-1 rounded-full">
                 {positionLabelFull[player.position] || player.position}
               </span>
               {player.currentTeam && (
@@ -48,7 +48,7 @@ export default async function PlayerDetailPage({
           {session && (
             <Link
               href={`/players/${player.id}/edit`}
-              className="bg-blue-700 text-white px-4 py-2 rounded font-semibold hover:bg-blue-800 text-sm whitespace-nowrap"
+              className="bg-slate-800 text-white px-4 py-2 rounded font-semibold hover:bg-slate-700 text-sm whitespace-nowrap"
             >
               編集する
             </Link>

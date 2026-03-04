@@ -7,10 +7,10 @@ export default function CareerTimeline({ careers }: { careers: Career[] }) {
   }
 
   return (
-    <ol className="relative border-l border-blue-200 ml-3">
+    <ol className="relative border-l border-sky-200 ml-3">
       {careers.map((career) => (
         <li key={career.id} className="mb-6 ml-6">
-          <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-700 ring-4 ring-white text-white text-xs font-bold">
+          <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-slate-800 ring-4 ring-white text-white text-xs font-bold">
             ⚽
           </span>
           <div className="bg-gray-50 rounded-lg p-3 border border-gray-100">

@@ -27,7 +27,7 @@ export default function SearchBar() {
       />
       <button
         type="submit"
-        className="bg-blue-950 px-3 py-1 rounded text-sm hover:bg-blue-900"
+        className="bg-slate-900 px-3 py-1 rounded text-sm hover:bg-slate-800"
       >
         検索
       </button>

@@ -32,7 +32,7 @@ export default async function TeamsPage() {
                 <Link
                   key={team.id}
                   href={`/players?category=${team.category}`}
-                  className="bg-white border border-gray-200 rounded-lg p-4 hover:border-blue-400 hover:shadow-sm transition-all"
+                  className="bg-white border border-gray-200 rounded-lg p-4 hover:border-sky-400 hover:shadow-sm transition-all"
                 >
                   <p className="font-semibold text-gray-900">{team.name}</p>
                   <p className="text-sm text-gray-500 mt-1">

@@ -19,7 +19,7 @@ export default async function PlayerHistoryPage({
       <div>
         <Link
           href={`/players/${id}`}
-          className="text-blue-700 text-sm hover:underline"
+          className="text-sky-600 text-sm hover:underline"
         >
           ← {player.nameJa} のページに戻る
         </Link>
@@ -41,7 +41,7 @@ export default async function PlayerHistoryPage({
                 <div>
                   <p className="font-medium text-gray-900">
                     {index === 0 && (
-                      <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-2">
+                      <span className="text-xs bg-sky-100 text-sky-600 px-2 py-0.5 rounded mr-2">
                         最新
                       </span>
                     )}

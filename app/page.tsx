@@ -13,24 +13,22 @@ export default async function HomePage() {
   return (
     <div className="space-y-10">
       {/* ヒーロー */}
-      <section className="bg-gradient-to-br from-blue-700 to-blue-900 text-white rounded-2xl p-8 md:p-12 text-center shadow-lg">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">
-          アマチュアサッカー選手名鑑
-        </h1>
-        <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-          大学・高校・中学・アマチュアなど、草の根サッカー選手の情報を網羅。
-          誰でも編集・追加できるwiki型名鑑サイト。
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <section className="relative rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src="/hero-banner.png"
+          alt="Amateur Football Stars - Discover Local Talent"
+          className="w-full h-auto block"
+        />
+        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col sm:flex-row gap-6 sm:gap-48 justify-center items-center bg-gradient-to-t from-black/30 to-transparent">
           <Link
             href="/players"
-            className="bg-white text-blue-700 font-bold px-8 py-3 rounded-full hover:bg-blue-50 transition-colors"
+            className="bg-slate-800 text-white font-bold px-8 py-3 rounded-full hover:bg-slate-700 transition-colors"
           >
             選手を探す
           </Link>
           <Link
             href="/players/new"
-            className="border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-blue-600 transition-colors"
+            className="border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white/20 transition-colors"
           >
             選手を登録する
           </Link>
@@ -50,7 +48,7 @@ export default async function HomePage() {
             className="bg-white rounded-xl border border-slate-100 shadow-sm p-5 text-center"
           >
             <p className="text-3xl mb-1">{stat.icon}</p>
-            <p className="text-2xl font-bold text-blue-700">{stat.value}</p>
+            <p className="text-2xl font-bold text-sky-600">{stat.value}</p>
             <p className="text-sm text-gray-500">{stat.label}</p>
           </div>
         ))}
@@ -69,7 +67,7 @@ export default async function HomePage() {
             <Link
               key={cat.value}
               href={`/players?category=${cat.value}`}
-              className="bg-white border border-slate-200 rounded-xl p-4 text-center hover:border-blue-400 hover:shadow transition-all"
+              className="bg-white border border-slate-200 rounded-xl p-4 text-center hover:border-sky-400 hover:shadow transition-all"
             >
               <p className="text-2xl mb-1">{cat.icon}</p>
               <p className="font-semibold text-gray-700">{cat.label}</p>
@@ -83,7 +81,7 @@ export default async function HomePage() {
         <section>
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-bold text-gray-800">最近更新された選手</h2>
-            <Link href="/players" className="text-blue-700 text-sm hover:underline">
+            <Link href="/players" className="text-sky-600 text-sm hover:underline">
               すべて見る →
             </Link>
           </div>

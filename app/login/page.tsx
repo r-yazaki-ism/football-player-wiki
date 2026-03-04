@@ -53,7 +53,7 @@ function LoginForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
           placeholder="example@email.com"
         />
       </div>
@@ -67,7 +67,7 @@ function LoginForm() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
           placeholder="••••••••"
         />
       </div>
@@ -75,14 +75,14 @@ function LoginForm() {
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-blue-700 text-white py-2 rounded font-semibold hover:bg-blue-800 disabled:opacity-50"
+        className="w-full bg-slate-800 text-white py-2 rounded font-semibold hover:bg-slate-700 disabled:opacity-50"
       >
         {loading ? "ログイン中..." : "ログイン"}
       </button>
 
       <p className="text-center text-sm text-gray-500">
         アカウントをお持ちでない方は{" "}
-        <Link href="/register" className="text-blue-700 hover:underline font-medium">
+        <Link href="/register" className="text-sky-600 hover:underline font-medium">
           新規登録
         </Link>
       </p>

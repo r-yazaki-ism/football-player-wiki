@@ -75,7 +75,7 @@ export default async function SearchPage({
           <p className="text-4xl mb-3">⚽</p>
           <p>「{q}」に一致する選手・チームが見つかりませんでした</p>
           <div className="mt-4 space-x-4">
-            <Link href="/players/new" className="text-blue-700 hover:underline">
+            <Link href="/players/new" className="text-sky-600 hover:underline">
               選手を登録する
             </Link>
           </div>

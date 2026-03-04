@@ -34,7 +34,9 @@ export async function getPlayersList(params: PlayerListParams) {
   const where: Record<string, unknown> = { status: "active" };
   if (position) where.position = position as Position;
   if (nationality) where.nationality = nationality;
-  if (category) where.currentTeam = { category: category as Category };
+  if (category) {
+    where.currentTeam = { is: { category: category as Category } };
+  }
   if (q) {
     where.OR = [
       { nameJa: { contains: q } },

@@ -11,7 +11,7 @@ const geistSans = Geist({
 
 
 export const metadata: Metadata = {
-  title: "アマチュアサッカー選手名鑑",
+  title: "Amateur Football Stars",
   description: "大学・高校・中学・アマチュアなど、草の根サッカー選手のwiki型名鑑サイト",
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({
           <Navbar />
           <main className="max-w-7xl mx-auto px-4 py-6">{children}</main>
           <footer className="mt-12 border-t border-gray-200 py-6 text-center text-sm text-gray-400">
-            <p>アマチュアサッカー選手名鑑 &mdash; 誰でも編集できるサッカー百科</p>
+            <p>Amateur Football Stars &mdash; 誰でも編集できるサッカー百科</p>
           </footer>
         </SessionProvider>
       </body>

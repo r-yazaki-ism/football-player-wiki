@@ -10,10 +10,10 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-800 text-white shadow-md">
+    <nav className="bg-slate-800 text-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-wide">
-          ⚽ アマチュアサッカー選手名鑑
+          ⚽ Amateur Football Stars
         </Link>
 
         <div className="hidden md:flex items-center gap-6">
@@ -28,7 +28,7 @@ export default function Navbar() {
             <>
               <Link
                 href="/players/new"
-                className="bg-white text-blue-700 px-3 py-1 rounded text-sm font-semibold hover:bg-blue-50"
+                className="bg-white text-slate-800 px-3 py-1 rounded text-sm font-semibold hover:bg-sky-50"
               >
                 + 選手を追加
               </Link>
@@ -47,7 +47,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/register"
-                className="bg-white text-blue-700 px-3 py-1 rounded text-sm font-semibold hover:bg-blue-50"
+                className="bg-white text-slate-800 px-3 py-1 rounded text-sm font-semibold hover:bg-sky-50"
               >
                 新規登録
               </Link>
@@ -66,7 +66,7 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-blue-900 px-4 py-3 flex flex-col gap-3">
+        <div className="md:hidden bg-slate-900 px-4 py-3 flex flex-col gap-3">
           <SearchBar />
           <Link href="/players" onClick={() => setMenuOpen(false)}>
             選手一覧

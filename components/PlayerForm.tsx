@@ -139,7 +139,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
               value={form.nameJa}
               onChange={(e) => setForm({ ...form, nameJa: e.target.value })}
               required
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
               placeholder="山田 太郎"
             />
           </div>
@@ -151,7 +151,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
               type="text"
               value={form.nameKana}
               onChange={(e) => setForm({ ...form, nameKana: e.target.value })}
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
               placeholder="やまだ たろう"
             />
           </div>
@@ -163,7 +163,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
               type="text"
               value={form.nameEn}
               onChange={(e) => setForm({ ...form, nameEn: e.target.value })}
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
               placeholder="Taro Yamada"
             />
           </div>
@@ -175,7 +175,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
               type="text"
               value={form.nationality}
               onChange={(e) => setForm({ ...form, nationality: e.target.value })}
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
               placeholder="日本"
             />
           </div>
@@ -187,7 +187,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
               type="date"
               value={form.birthday}
               onChange={(e) => setForm({ ...form, birthday: e.target.value })}
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
             />
           </div>
           <div>
@@ -198,7 +198,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
               value={form.position}
               onChange={(e) => setForm({ ...form, position: e.target.value })}
               required
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
             >
               <option value="GK">GK（ゴールキーパー）</option>
               <option value="DF">DF（ディフェンダー）</option>
@@ -217,12 +217,12 @@ export default function PlayerForm({ initialData, mode }: Props) {
           placeholder="チーム名で絞り込み"
           value={teamSearch}
           onChange={(e) => setTeamSearch(e.target.value)}
-          className="w-full border border-gray-300 rounded px-3 py-2 text-sm mb-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 text-sm mb-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
         />
         <select
           value={form.currentTeamId}
           onChange={(e) => setForm({ ...form, currentTeamId: e.target.value })}
-          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
         >
           <option value="">（所属チームなし）</option>
           {filteredTeams.map((t) => (
@@ -235,7 +235,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
         <button
           type="button"
           onClick={() => setShowAddTeam(!showAddTeam)}
-          className="mt-2 text-sm text-blue-700 hover:underline"
+          className="mt-2 text-sm text-sky-600 hover:underline"
         >
           + チームが見つからない場合はここをクリック
         </button>
@@ -270,7 +270,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
             <button
               type="button"
               onClick={handleAddTeam}
-              className="bg-blue-700 text-white px-4 py-2 rounded text-sm hover:bg-blue-800"
+              className="bg-slate-800 text-white px-4 py-2 rounded text-sm hover:bg-slate-700"
             >
               チームを追加
             </button>
@@ -348,7 +348,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
         <button
           type="button"
           onClick={addCareer}
-          className="mt-3 text-sm text-blue-700 border border-blue-700 px-3 py-1 rounded hover:bg-blue-50"
+          className="mt-3 text-sm text-sky-600 border border-slate-800 px-3 py-1 rounded hover:bg-sky-50"
         >
           + 経歴を追加
         </button>
@@ -362,7 +362,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
           onChange={(e) => setForm({ ...form, bio: e.target.value })}
           rows={5}
           placeholder="選手の特徴、プレースタイル、実績などを自由に記述してください"
-          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
         />
       </section>
 
@@ -374,7 +374,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
           value={form.changeNote}
           onChange={(e) => setForm({ ...form, changeNote: e.target.value })}
           placeholder="何を変更したか簡潔に記入（例: 移籍情報を更新）"
-          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
         />
       </section>
 
@@ -382,7 +382,7 @@ export default function PlayerForm({ initialData, mode }: Props) {
         <button
           type="submit"
           disabled={loading}
-          className="bg-blue-700 text-white px-6 py-2 rounded font-semibold hover:bg-blue-800 disabled:opacity-50"
+          className="bg-slate-800 text-white px-6 py-2 rounded font-semibold hover:bg-slate-700 disabled:opacity-50"
         >
           {loading ? "保存中..." : mode === "create" ? "選手を登録" : "変更を保存"}
         </button>

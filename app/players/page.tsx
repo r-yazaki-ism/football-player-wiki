@@ -32,7 +32,7 @@ async function PlayerList({ searchParams }: { searchParams: PlayerSearchParams }
       <div className="text-center py-16 text-gray-500">
         <p className="text-4xl mb-3">⚽</p>
         <p>条件に一致する選手が見つかりませんでした</p>
-        <Link href="/players/new" className="mt-4 inline-block text-blue-700 hover:underline">
+        <Link href="/players/new" className="mt-4 inline-block text-sky-600 hover:underline">
           選手を登録する →
         </Link>
       </div>
@@ -90,7 +90,7 @@ export default async function PlayersPage({
         <h1 className="text-2xl font-bold text-gray-900">選手一覧</h1>
         <Link
           href="/players/new"
-          className="bg-blue-700 text-white px-4 py-2 rounded font-semibold hover:bg-blue-800 text-sm"
+          className="bg-slate-800 text-white px-4 py-2 rounded font-semibold hover:bg-slate-700 text-sm"
         >
           + 選手を追加
         </Link>

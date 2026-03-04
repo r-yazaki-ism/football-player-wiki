@@ -42,7 +42,7 @@ export default function CategoryFilter() {
       <select
         value={currentPosition}
         onChange={(e) => updateFilter("position", e.target.value)}
-        className="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
       >
         {positions.map((p) => (
           <option key={p.value} value={p.value}>
@@ -54,7 +54,7 @@ export default function CategoryFilter() {
       <select
         value={currentCategory}
         onChange={(e) => updateFilter("category", e.target.value)}
-        className="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
       >
         {categories.map((c) => (
           <option key={c.value} value={c.value}>
@@ -68,7 +68,7 @@ export default function CategoryFilter() {
         value={currentNationality}
         onChange={(e) => updateFilter("nationality", e.target.value)}
         placeholder="国籍で絞り込み"
-        className="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
       />
 
       {(currentPosition || currentCategory || currentNationality) && (

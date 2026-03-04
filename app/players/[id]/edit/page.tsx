@@ -40,7 +40,7 @@ export default async function EditPlayerPage({
       <div>
         <Link
           href={`/players/${id}`}
-          className="text-blue-700 text-sm hover:underline"
+          className="text-sky-600 text-sm hover:underline"
         >
           ← {player.nameJa} のページに戻る
         </Link>
