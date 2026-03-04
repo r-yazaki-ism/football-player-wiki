@@ -107,7 +107,7 @@ async function main() {
         name: "横浜F・マリノスユース",
         country: "日本",
         league: "Jリーグ U-18",
-        category: Category.HIGH_SCHOOL,
+        category: Category.CLUB_YOUTH_U18,
       },
     }),
     prisma.team.upsert({
@@ -118,7 +118,7 @@ async function main() {
         name: "鹿島アントラーズユース",
         country: "日本",
         league: "Jリーグ U-18",
-        category: Category.HIGH_SCHOOL,
+        category: Category.CLUB_YOUTH_U18,
       },
     }),
     prisma.team.upsert({
@@ -140,7 +140,7 @@ async function main() {
         name: "ガンバ大阪ユース",
         country: "日本",
         league: "Jリーグ U-18",
-        category: Category.HIGH_SCHOOL,
+        category: Category.CLUB_YOUTH_U18,
       },
     }),
     prisma.team.upsert({
@@ -162,7 +162,7 @@ async function main() {
         name: "浦和レッズユース",
         country: "日本",
         league: "Jリーグ U-18",
-        category: Category.HIGH_SCHOOL,
+        category: Category.CLUB_YOUTH_U18,
       },
     }),
     prisma.team.upsert({
@@ -197,7 +197,7 @@ async function main() {
         id: "team-yokohama-fm-jy",
         name: "横浜FMジュニアユース",
         country: "日本",
-        category: Category.MIDDLE_SCHOOL,
+        category: Category.CLUB_YOUTH_U15,
       },
     }),
     prisma.team.upsert({
@@ -207,7 +207,7 @@ async function main() {
         id: "team-kashima-jy",
         name: "鹿島アントラーズジュニアユース",
         country: "日本",
-        category: Category.MIDDLE_SCHOOL,
+        category: Category.CLUB_YOUTH_U15,
       },
     }),
     prisma.team.upsert({
@@ -227,7 +227,7 @@ async function main() {
         id: "team-gamba-jy",
         name: "ガンバ大阪ジュニアユース",
         country: "日本",
-        category: Category.MIDDLE_SCHOOL,
+        category: Category.CLUB_YOUTH_U15,
       },
     }),
     prisma.team.upsert({
@@ -237,7 +237,7 @@ async function main() {
         id: "team-kyoto-sanga-u15",
         name: "京都サンガF.C. U-15",
         country: "日本",
-        category: Category.MIDDLE_SCHOOL,
+        category: Category.CLUB_YOUTH_U15,
       },
     }),
     prisma.team.upsert({
@@ -247,7 +247,7 @@ async function main() {
         id: "team-urawa-jy",
         name: "浦和レッズジュニアユース",
         country: "日本",
-        category: Category.MIDDLE_SCHOOL,
+        category: Category.CLUB_YOUTH_U15,
       },
     }),
     prisma.team.upsert({
@@ -257,7 +257,7 @@ async function main() {
         id: "team-fctokyo-u15",
         name: "FC東京U-15深川",
         country: "日本",
-        category: Category.MIDDLE_SCHOOL,
+        category: Category.CLUB_YOUTH_U15,
       },
     }),
     prisma.team.upsert({
@@ -267,7 +267,7 @@ async function main() {
         id: "team-vegalta-jy",
         name: "ベガルタ仙台ジュニアユース",
         country: "日本",
-        category: Category.MIDDLE_SCHOOL,
+        category: Category.CLUB_YOUTH_U15,
       },
     }),
   ]);
@@ -767,7 +767,7 @@ async function main() {
     prisma.team.upsert({
       where: { id: "team-jubilo-y" },
       update: {},
-      create: { id: "team-jubilo-y", name: "ジュビロ磐田U-18", country: "日本", league: "Jリーグ U-18", category: Category.HIGH_SCHOOL },
+      create: { id: "team-jubilo-y", name: "ジュビロ磐田U-18", country: "日本", league: "Jリーグ U-18", category: Category.CLUB_YOUTH_U18 },
     }),
     prisma.team.upsert({
       where: { id: "team-fujiitsu" },
@@ -777,7 +777,7 @@ async function main() {
     prisma.team.upsert({
       where: { id: "team-azul-y" },
       update: {},
-      create: { id: "team-azul-y", name: "アスルクラロ沼津U-18", country: "日本", league: "静岡県高校サッカー", category: Category.HIGH_SCHOOL },
+      create: { id: "team-azul-y", name: "アスルクラロ沼津U-18", country: "日本", league: "静岡県高校サッカー", category: Category.CLUB_YOUTH_U18 },
     }),
   ]);
 

@@ -35,12 +35,16 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <p className="text-center text-gray-500 text-sm -mt-4">
+        誰でも編集可能なアマチュア選手名鑑
+      </p>
+
       {/* 統計 */}
       <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
           { label: "登録選手数", value: totalPlayers, icon: "👤" },
           { label: "登録チーム数", value: totalTeams, icon: "🏟️" },
-          { label: "対応カテゴリ", value: 4, icon: "📋" },
+          { label: "対応カテゴリ", value: 6, icon: "📋" },
           { label: "対応国数", value: "100+", icon: "🌍" },
         ].map((stat) => (
           <div
@@ -57,11 +61,13 @@ export default async function HomePage() {
       {/* カテゴリ別リンク */}
       <section>
         <h2 className="text-xl font-bold text-gray-800 mb-4">カテゴリから探す</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
           {[
             { label: "大学", value: "COLLEGE", icon: "🎓" },
             { label: "高校", value: "HIGH_SCHOOL", icon: "🏫" },
+            { label: "クラブユースU-18", value: "CLUB_YOUTH_U18", icon: "🏅" },
             { label: "中学", value: "MIDDLE_SCHOOL", icon: "📚" },
+            { label: "クラブユースU-15", value: "CLUB_YOUTH_U15", icon: "🌟" },
             { label: "アマチュア", value: "AMATEUR", icon: "⚽" },
           ].map((cat) => (
             <Link

@@ -256,7 +256,9 @@ export default function PlayerForm({ initialData, mode }: Props) {
               >
                 <option value="COLLEGE">大学</option>
                 <option value="HIGH_SCHOOL">高校</option>
+                <option value="CLUB_YOUTH_U18">クラブユースU-18</option>
                 <option value="MIDDLE_SCHOOL">中学</option>
+                <option value="CLUB_YOUTH_U15">クラブユースU-15</option>
                 <option value="AMATEUR">アマチュア</option>
               </select>
               <input

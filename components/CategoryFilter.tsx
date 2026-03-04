@@ -14,7 +14,9 @@ const categories = [
   { value: "", label: "全カテゴリ" },
   { value: "COLLEGE", label: "大学" },
   { value: "HIGH_SCHOOL", label: "高校" },
+  { value: "CLUB_YOUTH_U18", label: "クラブユースU-18" },
   { value: "MIDDLE_SCHOOL", label: "中学" },
+  { value: "CLUB_YOUTH_U15", label: "クラブユースU-15" },
   { value: "AMATEUR", label: "アマチュア" },
 ];
 

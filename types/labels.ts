@@ -1,11 +1,13 @@
 export const categoryLabel: Record<string, string> = {
   COLLEGE: "大学",
   HIGH_SCHOOL: "高校",
+  CLUB_YOUTH_U18: "クラブユースU-18",
   MIDDLE_SCHOOL: "中学",
+  CLUB_YOUTH_U15: "クラブユースU-15",
   AMATEUR: "アマチュア",
 };
 
-export const categoryOrder = ["COLLEGE", "HIGH_SCHOOL", "MIDDLE_SCHOOL", "AMATEUR"] as const;
+export const categoryOrder = ["COLLEGE", "HIGH_SCHOOL", "CLUB_YOUTH_U18", "MIDDLE_SCHOOL", "CLUB_YOUTH_U15", "AMATEUR"] as const;
 
 export const positionLabel: Record<string, string> = {
   GK: "GK",
