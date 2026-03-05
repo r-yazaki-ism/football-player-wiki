@@ -13,22 +13,40 @@ export default async function HomePage() {
   return (
     <div className="space-y-10">
       {/* ヒーロー */}
-      <section className="relative rounded-2xl overflow-hidden shadow-lg">
-        <img
-          src="/hero-banner.png"
-          alt="Amateur Football Stars - Discover Local Talent"
-          className="w-full h-auto block"
-        />
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col sm:flex-row gap-6 sm:gap-48 justify-center items-center bg-gradient-to-t from-black/30 to-transparent">
+      <section className="rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative">
+          <img
+            src="/hero-banner.png"
+            alt="Amateur Football Stars - Discover Local Talent"
+            className="w-full h-auto block"
+          />
+          {/* PC: バナー上にオーバーレイ */}
+          <div className="hidden md:flex absolute bottom-0 left-0 right-0 p-8 gap-48 justify-center items-center bg-gradient-to-t from-black/30 to-transparent">
+            <Link
+              href="/players"
+              className="bg-slate-800 text-white font-bold px-8 py-3 rounded-full hover:bg-slate-700 transition-colors"
+            >
+              選手を探す
+            </Link>
+            <Link
+              href="/players/new"
+              className="border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white/20 transition-colors"
+            >
+              選手を登録する
+            </Link>
+          </div>
+        </div>
+        {/* スマホ: バナー下にボタン */}
+        <div className="flex md:hidden gap-3 justify-center p-4 bg-slate-800">
           <Link
             href="/players"
-            className="bg-slate-800 text-white font-bold px-8 py-3 rounded-full hover:bg-slate-700 transition-colors"
+            className="bg-white text-slate-800 font-bold px-6 py-2.5 rounded-full hover:bg-gray-100 transition-colors text-sm"
           >
             選手を探す
           </Link>
           <Link
             href="/players/new"
-            className="border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white/20 transition-colors"
+            className="border-2 border-white text-white font-bold px-6 py-2.5 rounded-full hover:bg-white/20 transition-colors text-sm"
           >
             選手を登録する
           </Link>
